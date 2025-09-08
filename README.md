@@ -59,3 +59,11 @@ Follow these steps to reproduce my results:
    cd telco-churn-ml
 
 
+2. **Install dependencies**  
+   Make sure Python is installed, then run:
+   ```bash
+   pip install -r requirements.txt
+
+
+
+
