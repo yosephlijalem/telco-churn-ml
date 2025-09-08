@@ -62,3 +62,21 @@ Important features: tenure, contract type, monthly charges, services.
 
 ## 6. Error analysis & next steps
 Common FP/FN patterns, probability calibration, cost-based thresholding, deployment idea (API).
+
+
+## Baseline Modeling Results
+
+We trained a baseline Logistic Regression model using one-hot encoding and scaled numerical features.  
+Evaluation on the test set gave the following results:
+
+- **ROC-AUC**: 0.84
+- **Accuracy**: 0.81
+- **Churn (class = 1)**: Precision = 0.66, Recall = 0.56, F1 = 0.61
+- **Non-Churn (class = 0)**: Precision = 0.85, Recall = 0.89, F1 = 0.87
+
+### Interpretation
+- The model is much better at predicting **non-churners** than churners.
+- Recall for churn (56%) indicates some churners are missed.
+- Still, ROC-AUC of 0.84 shows good separation ability.
+- This baseline will be improved using more advanced models (e.g., Random Forest, XGBoost) and imbalance handling techniques (SMOTE, class weights).
+
