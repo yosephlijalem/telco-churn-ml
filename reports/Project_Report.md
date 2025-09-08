@@ -66,7 +66,7 @@ Common FP/FN patterns, probability calibration, cost-based thresholding, deploym
 
 ## Baseline Modeling Results
 
-We trained a baseline Logistic Regression model using one-hot encoding and scaled numerical features.  
+I trained a baseline Logistic Regression model using one-hot encoding and scaled numerical features.  
 Evaluation on the test set gave the following results:
 
 - **ROC-AUC**: 0.84
