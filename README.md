@@ -65,7 +65,15 @@ Follow these steps to reproduce my results:
    pip install -r requirements.txt
 
 
-3. **Launch Jupyter Notebook**  
+3. **Launch Jupyter Notebook**
+
+
+
+4. **View results**  
+   - Model performance metrics are shown inside the notebooks.  
+   - Figures (ROC curve, SHAP plots) are saved in `reports/figures/`.  
+   - The full written report is in `reports/Project_Report.md`.  
+   - The model card is in `MODEL_CARD.md`.
    
 
 
