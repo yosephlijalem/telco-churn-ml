@@ -66,8 +66,7 @@ Follow these steps to reproduce my results:
 
 
 3. **Launch Jupyter Notebook**  
-   ```bash
-   jupyter notebook
+   
 
 
 
