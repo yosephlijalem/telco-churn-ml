@@ -1,5 +1,19 @@
 # telco-churn-ml
 Predicting customer churn with ML (XGBoost, SHAP, explainability)
+
+## 📊 Results Summary
+
+| Model                | ROC-AUC | Accuracy | Precision (Churn=1) | Recall (Churn=1) | F1 (Churn=1) |
+|-----------------------|---------|----------|----------------------|------------------|--------------|
+| Logistic Regression   | 0.84    | 0.81     | 0.66                 | 0.56             | 0.61         |
+| Random Forest         | 0.83    | 0.78     | 0.62                 | 0.48             | 0.54         |
+| XGBoost               | 0.83    | 0.75     | 0.53                 | **0.75**         | 0.62         |
+
+- Logistic regression: Strong balanced baseline.  
+- Random forest: More robust, but struggled with churn recall.  
+- XGBoost: Best **recall (75%)**, making it the most effective for catching churners.  
+
+
 # Telco Customer Churn Project
 
 This project predicts whether a telecom customer will leave (churn) using machine learning.  
