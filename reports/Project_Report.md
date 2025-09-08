@@ -74,6 +74,22 @@ Evaluation on the test set gave the following results:
 - **Churn (class = 1)**: Precision = 0.66, Recall = 0.56, F1 = 0.61
 - **Non-Churn (class = 0)**: Precision = 0.85, Recall = 0.89, F1 = 0.87
 
+### Random Forest Results
+
+A Random Forest model with class-weight balancing was trained for comparison.
+
+- **ROC-AUC**: 0.83
+- **Accuracy**: 0.78
+- **Churn (class = 1)**: Precision = 0.62, Recall = 0.48, F1 = 0.54
+- **Non-Churn (class = 0)**: Precision = 0.83, Recall = 0.89, F1 = 0.86
+
+### Interpretation
+- Random Forest performs similarly to logistic regression in ROC-AUC.
+- It achieves slightly higher precision for churn but recall remains low.
+- Accuracy is lower than logistic regression, showing a trade-off.
+- Logistic regression remains competitive and interpretable, but Random Forest adds value as a non-linear baseline.
+
+
 ### Interpretation
 - The model is much better at predicting **non-churners** than churners.
 - Recall for churn (56%) indicates some churners are missed.
