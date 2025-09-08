@@ -74,6 +74,12 @@ Evaluation on the test set gave the following results:
 - **Churn (class = 1)**: Precision = 0.66, Recall = 0.56, F1 = 0.61
 - **Non-Churn (class = 0)**: Precision = 0.85, Recall = 0.89, F1 = 0.87
 
+### Interpretation
+- The model is much better at predicting **non-churners** than churners.
+- Recall for churn (56%) indicates some churners are missed.
+- Still, ROC-AUC of 0.84 shows good separation ability.
+- This baseline will be improved using more advanced models (e.g., Random Forest, XGBoost) and imbalance handling techniques (SMOTE, class weights).
+
 ### Random Forest Results
 
 A Random Forest model with class-weight balancing was trained for comparison.
@@ -89,10 +95,21 @@ A Random Forest model with class-weight balancing was trained for comparison.
 - Accuracy is lower than logistic regression, showing a trade-off.
 - Logistic regression remains competitive and interpretable, but Random Forest adds value as a non-linear baseline.
 
+### XGBoost Results
+
+An XGBoost classifier was trained with class-weight balancing.  
+
+- **ROC-AUC**: 0.83  
+- **Accuracy**: 0.75  
+- **Churn (class = 1)**: Precision = 0.53, Recall = 0.75, F1 = 0.62  
+- **Non-Churn (class = 0)**: Precision = 0.89, Recall = 0.76, F1 = 0.82  
 
 ### Interpretation
-- The model is much better at predicting **non-churners** than churners.
-- Recall for churn (56%) indicates some churners are missed.
-- Still, ROC-AUC of 0.84 shows good separation ability.
-- This baseline will be improved using more advanced models (e.g., Random Forest, XGBoost) and imbalance handling techniques (SMOTE, class weights).
+- XGBoost achieves the **best recall for churn (75%)**, meaning it identifies more customers likely to churn.
+- Precision for churn is lower (53%), so some non-churners are misclassified, but this trade-off is acceptable in churn prediction.
+- Compared to logistic regression and random forest, XGBoost balances performance and recall better, making it a stronger candidate for business use.
+
+
+
+
 
