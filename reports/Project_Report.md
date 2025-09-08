@@ -15,6 +15,13 @@ Important features: tenure, contract type, monthly charges, services.
   - Yes: ~27% of customers
 - This imbalance means accuracy alone is not a good metric; now i  will focus on ROC-AUC, Precision, Recall, and F1 instead.
 
+### Numerical feature distributions
+- **SeniorCitizen**: ~84% of customers are not senior, ~16% are senior.
+- **Tenure**: Many customers are new (tenure < 12 months) or long-term (close to 70 months).
+- **MonthlyCharges**: Two clusters appear — low (~$20) and higher ($70–$100).
+- Implies different customer groups may churn for different reasons (new customers vs long-term).
+
+
 
 ## 3. Plan
 - Explore data (types, missing values, class balance).
