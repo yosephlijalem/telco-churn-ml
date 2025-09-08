@@ -65,5 +65,11 @@ Follow these steps to reproduce my results:
    pip install -r requirements.txt
 
 
+3. **Launch Jupyter Notebook**  
+   ```bash
+   jupyter notebook
+
+
+
 
 
