@@ -14,6 +14,16 @@ Predicting customer churn with ML (XGBoost, SHAP, explainability)
 - XGBoost: Best **recall (75%)**, making it the most effective for catching churners.  
 
 
+## 📈 Model Performance Visuals
+
+**ROC Curve (XGBoost)**  
+![ROC Curve](reports/figures/roc_xgb.png)
+
+**Confusion Matrix (XGBoost)**  
+![Confusion Matrix](reports/figures/confusion_matrix_xgb.png)
+
+
+
 # Telco Customer Churn Project
 
 This project predicts whether a telecom customer will leave (churn) using machine learning.  
