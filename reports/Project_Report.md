@@ -118,8 +118,9 @@ Two global explainability views were generated for the XGBoost model:
 - **Beeswarm plot**: shows how each feature pushes predictions toward churn or non-churn across many customers.  
 - **Mean |SHAP| bar chart**: global ranking of the most influential features.
 
-![SHAP Beeswarm](figures/shap_beeswarm.png)
-![SHAP Bar](figures/shap_bar.png)
+![SHAP Beeswarm](./figures/shap_beeswarm.png)
+![SHAP Bar](./figures/shap_bar.png)
+
 
 **Key takeaways (update after viewing the plots):**
 - Contract type and tenure have the largest impact on churn predictions.
