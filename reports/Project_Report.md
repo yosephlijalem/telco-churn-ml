@@ -22,6 +22,17 @@ Important features: tenure, contract type, monthly charges, services.
 - Implies different customer groups may churn for different reasons (new customers vs long-term).
 
 
+### Categorical feature insights
+- Contract type is the strongest churn signal: **month-to-month churn >> one-year > two-year**.
+- **Electronic check** customers churn more than **auto-pay** (credit card/bank transfer).
+- **PaperlessBilling** shows higher churn than mailed billing.
+- Missing add-on services (**OnlineSecurity, OnlineBackup, DeviceProtection, TechSupport**) correlate with higher churn.
+- **InternetService**: fiber optic customers churn more than DSL or no internet.
+- Weak/near-neutral effects: **gender, phone service, multiple lines, streaming**.
+- **TotalCharges** will be treated as a numeric feature in modeling.
+
+
+
 
 ## 3. Plan
 - Explore data (types, missing values, class balance).
