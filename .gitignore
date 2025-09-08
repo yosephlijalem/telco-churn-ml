@@ -1,0 +1,10 @@
+# Ignore processed data and large files
+data/processed/
+models/
+reports/Project_Report.pdf
+
+# Ignore system and cache files
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
