@@ -76,6 +76,11 @@ Follow these steps to reproduce my results:
    - The model card is in `MODEL_CARD.md`.
    
 
+   Following these steps will reproduce the full churn prediction pipeline:  
+   data exploration → modeling (Logistic, RF, XGBoost) → SHAP explainability → report.
+
+   
+
 
 
 
