@@ -46,3 +46,16 @@ The focus is not only on accuracy but also on understanding why customers churn 
 - Cross-validation for reliable metrics
 - Metrics: ROC-AUC, F1, Precision/Recall
 - Explainability with SHAP
+
+
+## ⚙️ How to Run the Project
+
+Follow these steps to reproduce my results:
+
+1. **Clone this repository**  
+   Open a terminal and run:
+   ```bash
+   git clone https://github.com/yosephlijalem/telco-churn-ml.git
+   cd telco-churn-ml
+
+
