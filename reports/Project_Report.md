@@ -7,6 +7,15 @@ Predict which customers will churn so a team can contact them and reduce revenue
 Public “Telco Customer Churn” (Kaggle). Target column: `Churn` (Yes/No).  
 Important features: tenure, contract type, monthly charges, services.
 
+### Exploration findings
+- No missing values detected across all 21 columns.
+- Dataset has 7,043 customers (rows).
+- Target variable (`Churn`) is imbalanced:
+  - No: ~73% of customers
+  - Yes: ~27% of customers
+- This imbalance means accuracy alone is not a good metric; now i  will focus on ROC-AUC, Precision, Recall, and F1 instead.
+
+
 ## 3. Plan
 - Explore data (types, missing values, class balance).
 - Build a **baseline** (Logistic Regression).
